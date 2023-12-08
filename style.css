@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url(/Fonts/Karla/Karla-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Karla';
+  src: url(/Fonts/Karla/Karla-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(/Fonts/Raleway/Raleway-Black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(/Fonts/Raleway/Raleway-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(/Fonts/Raleway/Raleway-ExtraBold.ttf);
+  font-weight: 800;
+}
+.main-section button,
+.main-section a {
+  cursor: pointer;
+}
+.main-section .main-container .product-description-section {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-section .main-container .product-description-section .product-image-details {
+  background-image: url(/Images/Group\ 5599.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 760px;
+}
+.main-section .main-container .product-description-section .inner-details-container {
+  padding: 10px 0px 50px 60px;
+}
+.main-section .main-container .product-description-section .inner-details-container ul {
+  display: flex;
+}
+.main-section .main-container .product-description-section .inner-details-container ul li {
+  list-style: none;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.main-section .main-container .product-description-section .inner-details-container ul li + li:before {
+  color: black;
+  content: "/\00a0";
+}
+.main-section .main-container .product-description-section .inner-details-container a {
+  font: 400 12px/30px 'Karla';
+  color: #000000;
+  text-decoration: none;
+}
+.main-section .main-container .product-description-section .inner-details-container .boldText {
+  font-weight: bold;
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image {
+  position: relative;
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image .product-background {
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 3px 3px 10px #00000008;
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .forward {
+  position: absolute;
+  top: 273px;
+  left: -21px;
+  width: 50px;
+  background-color: #C0C0C0;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  height: auto;
+  text-align: center;
+  transform: rotate(180deg);
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .forward span {
+  font-size: 30px;
+  color: white;
+  padding: 7px 0px;
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .backward {
+  background: #8C8989;
+  position: absolute;
+  right: 0px;
+  top: 273px;
+  width: 50px;
+  transform: unset;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  height: auto;
+  text-align: center;
+  transform: rotate(180deg);
+}
+.main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .backward span {
+  font-size: 30px;
+  color: white;
+  padding: 7px 0px;
+}
+.main-section .main-container .product-description-section .inner-details-container .allViews {
+  padding: 20px 0px;
+}
+.main-section .main-container .product-description-section .inner-details-container .allViews img {
+  margin-right: 15px;
+}
+.main-section .main-container .product-description-section .inner-details-container .allViews .active {
+  border: 3px solid black;
+}
+.main-section .main-container .product-description-section .inner-details-container .shipping-details {
+  display: flex;
+  width: 100%;
+  max-width: 440px;
+  justify-content: space-between;
+}
+.main-section .main-container .product-description-section .inner-details-container .shipping-details .query-div {
+  display: flex;
+  width: 100%;
+  max-width: 170px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .main-container .product-description-section .inner-details-container .shipping-details .query-div p a {
+  font: bold 18px/22px 'Karla';
+  color: #000000;
+  text-decoration: underline;
+}
+.main-section .main-container .product-description-section .inner-details-container .shipping-details .ship {
+  max-width: 190px;
+}
+.main-section .main-container .product-description-section .product-description-details {
+  padding: 54px 0px 100px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details h1 {
+  font: 900 44px/50px 'Raleway';
+  max-width: 480px;
+}
+.main-section .main-container .product-description-section .product-description-details .price-div {
+  display: flex;
+  max-width: 155px;
+  padding: 20px 0px 32px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .price-div p {
+  font: bold 16px/30px 'Karla';
+  color: #000000;
+  display: inline;
+  text-align: center;
+  padding-right: 10px;
+}
+.main-section .main-container .product-description-section .product-description-details .price-div span {
+  font: bold 30px/30px 'Karla';
+  color: #CF8700;
+  text-align: center;
+}
+.main-section .main-container .product-description-section .product-description-details .selection {
+  display: flex;
+  justify-content: space-between;
+}
+.main-section .main-container .product-description-section .product-description-details .selection p {
+  font: bold 16px/30px 'Karla';
+  letter-spacing: 1px;
+}
+.main-section .main-container .product-description-section .product-description-details .selection .size-guide img {
+  vertical-align: middle;
+}
+.main-section .main-container .product-description-section .product-description-details .selection .size-guide a {
+  font: bold 14px/30px 'Karla';
+  color: #8C8989;
+}
+.main-section .main-container .product-description-section .product-description-details .buttons {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+.main-section .main-container .product-description-section .product-description-details .buttons .btn {
+  width: 100%;
+  max-width: 114px;
+  font: bold 16px/19px 'Karla';
+  border: 1px solid #000000;
+  padding: 15px 0px;
+  background-color: white;
+}
+.main-section .main-container .product-description-section .product-description-details .buttons .sold {
+  background-color: #EFEFEF;
+  color: #8C8989;
+  border: 1px solid #8C8989;
+}
+.main-section .main-container .product-description-section .product-description-details .buttons .large {
+  padding: 15px 15px;
+  background-color: #000000;
+  color: white;
+}
+.main-section .main-container .product-description-section .product-description-details .cart-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 40px 0px 30px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .cart-btns select {
+  width: 100%;
+  max-width: 50px;
+  padding: 4px 10px;
+  font: bold 16px/30px 'Karla';
+  -webkit-appearance: none;
+  border: 1px solid black;
+  background-color: #F8F8F8;
+}
+.main-section .main-container .product-description-section .product-description-details .cart-btns span {
+  position: absolute;
+  left: 25px;
+  color: #8C8989;
+}
+.main-section .main-container .product-description-section .product-description-details .cart-btns .cart {
+  width: 100%;
+  max-width: 410px;
+  font: 800 20px/24px 'Raleway';
+  color: white;
+  background-color: #60A128;
+  padding: 15px 110px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-section .main-container .product-description-section .product-description-details .shipping-text img {
+  vertical-align: middle;
+}
+.main-section .main-container .product-description-section .product-description-details .shipping-text p {
+  font: 400 16px/20px 'Karla';
+  color: #000000;
+  text-align: right;
+}
+.main-section .main-container .product-description-section .product-description-details .shipping-text span,
+.main-section .main-container .product-description-section .product-description-details .shipping-text a {
+  font: bold 16px/20px 'Karla';
+  color: #008FD6;
+  text-decoration: none;
+}
+.main-section .main-container .product-description-section .product-description-details hr {
+  color: #8C8989;
+  margin: 32px 0px 0px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #8C8989;
+  padding: 25px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-div h4 {
+  font: bold 20px/40px 'Raleway';
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-div .remove,
+.main-section .main-container .product-description-section .product-description-details .description-section .description-div .add {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-div .remove {
+  display: none;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .last {
+  border-bottom: unset;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-details p {
+  font: 400 18px/24px 'Karla';
+  max-width: 432px;
+  display: none;
+}
+.main-section .main-container .product-description-section .product-description-details .description-section .description-details .second-text {
+  padding: 20px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .recent-section h1 {
+  font: 900 24px/30px 'Raleway';
+  text-transform: uppercase;
+  margin: 61px 0px 20px 0px;
+}
+.main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-details {
+  width: 100%;
+  max-width: 220px;
+}
+.main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-details h3 {
+  font: bold 16px/18px 'Raleway';
+  text-align: center;
+  height: 100%;
+  max-height: 37px;
+  padding-bottom: 10px;
+  padding: 0px 10px;
+}
+.main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-details p {
+  font: bold 18px/30px 'Karla';
+  color: #CF8700;
+  text-align: center;
+}
