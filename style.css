@@ -33,15 +33,17 @@
   cursor: pointer;
 }
 .main-section .main-container .product-description-section {
+  position: relative;
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
 }
+.main-section .main-container .product-description-section .background-img {
+  height: 100%;
+  max-height: 796px;
+}
 .main-section .main-container .product-description-section .product-image-details {
-  background-image: url(/Images/Group\ 5599.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 760px;
+  position: absolute;
 }
 .main-section .main-container .product-description-section .inner-details-container {
   padding: 10px 0px 50px 60px;
@@ -85,6 +87,7 @@
   height: auto;
   text-align: center;
   transform: rotate(180deg);
+  cursor: pointer;
 }
 .main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .forward span {
   font-size: 30px;
@@ -94,7 +97,7 @@
 .main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .backward {
   background: #8C8989;
   position: absolute;
-  right: 0px;
+  right: -24px;
   top: 273px;
   width: 50px;
   transform: unset;
@@ -102,7 +105,7 @@
   border-radius: 50px;
   height: auto;
   text-align: center;
-  transform: rotate(180deg);
+  cursor: pointer;
 }
 .main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .backward span {
   font-size: 30px;
@@ -110,7 +113,7 @@
   padding: 7px 0px;
 }
 .main-section .main-container .product-description-section .inner-details-container .allViews {
-  padding: 20px 0px;
+  padding: 20px 0px 27px 0px;
 }
 .main-section .main-container .product-description-section .inner-details-container .allViews img {
   margin-right: 15px;
@@ -312,4 +315,48 @@
   font: bold 18px/30px 'Karla';
   color: #CF8700;
   text-align: center;
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .main-section .main-container .product-description-section .inner-details-container {
+    padding: 10px 0px 14px 55px;
+  }
+  .main-section .main-container .product-description-section .inner-details-container .product-image .product-background {
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 3px 3px 10px #00000008;
+  }
+  .main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .forward,
+  .main-section .main-container .product-description-section .inner-details-container .product-image .forward-btns .backward {
+    top: 185px;
+  }
+  .main-section .main-container .product-description-section .inner-details-container .shipping-details {
+    max-width: 382px;
+    margin-top: 10px;
+  }
+  .main-section .main-container .product-description-section .product-description-details {
+    width: 100%;
+    max-width: 480px;
+    padding: 54px 31px 100px 50px;
+  }
+  .main-section .main-container .product-description-section .product-description-details h1 {
+    font: 900 34px/40px 'Raleway';
+    max-width: 480px;
+  }
+  .main-section .main-container .product-description-section .product-description-details .buttons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main-section .main-container .product-description-section .product-description-details .cart-btns .cart {
+    max-width: 300px;
+    padding: 15px 50px;
+  }
+  .main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-details img {
+    max-width: 175px;
+  }
+  .main-section .main-container .product-description-section .product-description-details .recent-section .recent-products-details h3 {
+    padding: unset;
+  }
+  .main-section .main-container .product-description-section .background-img {
+    height: 100%;
+    max-height: 627px;
+  }
 }

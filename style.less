@@ -53,17 +53,33 @@
 
         // product description page
         .product-description-section {
-
+            position: relative;
             max-width: 1300px;
             display: flex;
             justify-content: space-between;
 
-            .product-image-details {
+            // max-width: 1365px;
+            // margin: 0 auto;
+            .background-img {
+                // position: absolute;
+                height: 100%;
+                max-height: 796px;
+            }
 
-                background-image: url(/Images/Group\ 5599.jpg);
-                background-repeat: no-repeat;
-                width: 100%;
-                max-width: 760px;
+            .product-image-details {
+                position: absolute;
+
+                // background-image: url(/Images/Group\ 5599.jpg);
+                // background-repeat: no-repeat;
+                // width: 100%;
+                // max-width: 760px;
+
+                // @media screen and (max-width:1023px) {
+                //     background-image: url(/Images/tablet\ background.png);
+                //     background-repeat: no-repeat;
+                //     width: 100%;
+                // }
+
 
 
             }
@@ -123,6 +139,7 @@
                             height: auto;
                             text-align: center;
                             transform: rotate(180deg);
+                            cursor: pointer;
 
                             span {
                                 font-size: 30px;
@@ -134,7 +151,7 @@
                         .backward {
                             background: #8C8989;
                             position: absolute;
-                            right: 0px;
+                            right: -24px;
                             top: 273px;
                             width: 50px;
                             transform: unset;
@@ -142,7 +159,8 @@
                             border-radius: 50px;
                             height: auto;
                             text-align: center;
-                            transform: rotate(180deg);
+                            cursor: pointer;
+                            // transform: rotate(180deg);
 
                             span {
                                 font-size: 30px;
@@ -155,7 +173,7 @@
 
                 .allViews {
                     // max-width: 300px;
-                    padding: 20px 0px;
+                    padding: 20px 0px 27px 0px;
 
                     img {
                         margin-right: 15px;
@@ -202,6 +220,7 @@
             }
 
             .product-description-details {
+
                 padding: 54px 0px 100px 0px;
 
                 h1 {
@@ -448,3 +467,104 @@
 
 
 // media query styles for small laptop
+
+
+@media screen and (min-width:1024px) and(max-width:1365px) {
+
+
+    .main-section {
+        .main-container {
+            .product-description-section {
+                // max-width: 1005px;
+
+                .inner-details-container {
+                    padding: 10px 0px 14px 55px;
+
+                    .product-image {
+                        .product-background {
+                            width: 100%;
+                            max-width: 480px;
+                            box-shadow: 3px 3px 10px #00000008;
+                        }
+
+                        .forward-btns {
+
+                            .forward,
+                            .backward {
+                                top: 185px;
+                            }
+                        }
+
+                    }
+
+                    .shipping-details {
+                        max-width: 382px;
+                        margin-top: 10px;
+                    }
+
+
+                }
+
+                .product-description-details {
+                    width: 100%;
+                    max-width: 480px;
+                    padding: 54px 31px 100px 50px;
+
+                    h1 {
+                        font: 900 34px/40px 'Raleway';
+                        max-width: 480px;
+                    }
+
+                    .buttons {
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+
+                    .cart-btns {
+
+                        .cart {
+                            max-width: 300px;
+                            padding: 15px 50px;
+
+                        }
+
+                    }
+
+                    .recent-section {
+                        .recent-products-details {
+                            img {
+                                max-width: 175px;
+                            }
+
+                            h3 {
+                                padding: unset;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+
+    .main-section .main-container .product-description-section .background-img {
+        height: 100%;
+        max-height: 627px;
+    }
+}
+
+// media query styles for tablet screen
+@media screen and (max-width:1023px) {}
+
+
+// media query for mobile screen
+@media screen and (max-width:767px) {}
