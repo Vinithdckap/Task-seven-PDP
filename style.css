@@ -212,6 +212,17 @@
   background-color: #EFEFEF;
   color: #8C8989;
   border: 1px solid #8C8989;
+  position: relative;
+}
+.main-section .main-container .product-description-section .product-description-container .product-description-details .buttons .sold::after {
+  content: "";
+  height: 1px;
+  width: 124px;
+  background-color: #8C8989;
+  position: absolute;
+  transform: rotate(337deg);
+  top: 25px;
+  right: -6px;
 }
 .main-section .main-container .product-description-section .product-description-container .product-description-details .buttons .large {
   padding: 15px 15px;
@@ -509,6 +520,16 @@
   }
   .main-section .main-container .product-description-section .product-description-container .product-description-details .buttons .btn {
     max-width: 104px;
+  }
+  .main-section .main-container .product-description-section .product-description-container .product-description-details .buttons .sold::after {
+    content: "";
+    height: 1px;
+    width: 114px;
+    background-color: #8C8989;
+    position: absolute;
+    transform: rotate(335deg);
+    top: 24px;
+    right: -6px;
   }
   .main-section .main-container .product-description-section .product-description-container .product-description-details .recent-section .recent-products-details {
     max-width: 149px;
