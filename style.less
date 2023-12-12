@@ -64,23 +64,43 @@
 
             max-width: 1365px;
             margin: 0 auto;
+            position: relative;
 
             .product-description-container {
-                position: relative;
+            
                 max-width: 1300px;
                 display: flex;
                 justify-content: space-between;
+                
 
                 .background-img {
                     // position: absolute;
                     height: 100%;
                     max-height: 796px;
+
                 }
 
                 .tablet-img {
                     display: none;
                 }
+                .biggerImg{
+                    display: none;
+                }
+                @media screen and (min-width:1370px) and (max-width: 1920px){
+                    .tablet-img{
+                        display: none;
 
+                    }
+                    .background-img{
+                        display: none;
+                    }
+                    .biggerImg{
+                        position: relative;
+                        left: -278px;
+                        display: block;
+                        height: 796px;
+                    }
+                }
                 .product-image-details {
                     position: absolute;
 
@@ -309,6 +329,11 @@
                             background-color: white;
                         }
 
+
+                        .btn:hover{
+                            background-color: black;
+                            color: white;
+                        }
                         .sold {
                             background-color: #EFEFEF;
                             color: #8C8989;
@@ -328,11 +353,11 @@
 
                         }
 
-                        .large {
-                            padding: 15px 15px;
-                            background-color: @primary-color;
-                            color: white;
-                        }
+                        // .large {
+                        //     padding: 15px 15px;
+                        //     background-color: @primary-color;
+                        //     color: white;
+                        // }
 
                     }
 
@@ -557,6 +582,10 @@
                     .background-img {
                         height: 100%;
                         max-height: 627px;
+                        display: block;
+                    }
+                    .biggerImg{
+                        display: none;
                     }
 
                     .inner-details-container {
@@ -684,7 +713,9 @@
                     .tablet-img {
                         display: block;
                     }
-
+                    .biggerImg{
+                        display: none;
+                    }
 
                     .product-description-details {
                         padding: 54px 144px 100px 144px;
@@ -734,6 +765,9 @@
 
             .headerMob {
                 display: block;
+            }
+            .biggerImg{
+                display: none;
             }
 
             .product-description-section {
