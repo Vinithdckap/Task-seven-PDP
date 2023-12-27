@@ -52,7 +52,6 @@
     }
 
     .main-container {
-
         position: relative;
 
         .header-container {
@@ -214,6 +213,40 @@
 
 
 
+        }
+
+        .mini-popup {
+            display: none;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+            z-index: 999;
+        }
+
+        @keyframes bounceIn {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
         }
 
         // product description page
@@ -566,6 +599,8 @@
 
 
                         }
+
+
                     }
 
                     .shipping-text {
@@ -883,7 +918,8 @@
                             background-image: url(/Images/tablet\ background.png);
                             background-repeat: no-repeat;
                             background-size: cover;
-                            height: 655px;
+                            height: 621px;
+
                             width: 100%;
 
                             ul {

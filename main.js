@@ -83,11 +83,22 @@ $(document).ready(function () {
 
 
 // add cart
-
+toastr.options.closeMethod = 'fadeOut';
+toastr.options.closeDuration = 200;
+toastr.options.closeEasing = 'swing';
 $(document).ready(function () {
   let counts = 0;
   $(".cart").click(function () {
 
+
+    // Show a simple success toast
+    toastr.success('Item added');
+    setTimeout(() => {
+      toastr.remove()
+    }, 1000);
+
+
+    // count adding
     counts += +1;
     $(".cart-count").animate({
     }, function () {
@@ -98,7 +109,6 @@ $(document).ready(function () {
 
 
 // mini cart open 
-
 
 $(document).ready(function () {
   // Open Mini Cart
@@ -114,8 +124,24 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
 // cart deleting 
 $('.delete').click(function () {
   $(this).closest('.cart-details').hide(750);
+
+  toastr.error('Item deleted');
+  setTimeout(() => {
+    toastr.remove()
+  }, 1000);
+
 });
- 
+
+
+$(document).ready(function () {
+  $('.cart').on('click', function () {
+    $('.mini-popup').bounce().delay(1000).fadeOut(); // Show for 2 seconds
+  });
+});
